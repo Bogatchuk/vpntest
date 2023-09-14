@@ -13,9 +13,12 @@
 		881F7C6E2AB32AFD005CD198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881F7C6C2AB32AFD005CD198 /* Main.storyboard */; };
 		881F7C702AB32AFF005CD198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881F7C6F2AB32AFF005CD198 /* Assets.xcassets */; };
 		881F7C732AB32AFF005CD198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881F7C712AB32AFF005CD198 /* LaunchScreen.storyboard */; };
+		BF20AC4F6A108E98A72407C2 /* Pods_vpntest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0983035F472AA62871AF1A37 /* Pods_vpntest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0983035F472AA62871AF1A37 /* Pods_vpntest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vpntest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55CEE82DE7C06EDBB29F81D5 /* Pods-vpntest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vpntest.release.xcconfig"; path = "Target Support Files/Pods-vpntest/Pods-vpntest.release.xcconfig"; sourceTree = "<group>"; };
 		881F7C632AB32AFD005CD198 /* vpntest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vpntest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		881F7C662AB32AFD005CD198 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		881F7C682AB32AFD005CD198 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,8 @@
 		881F7C6F2AB32AFF005CD198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		881F7C722AB32AFF005CD198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		881F7C742AB32AFF005CD198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		881F7C7A2AB32B8C005CD198 /* vpntest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = vpntest.entitlements; sourceTree = "<group>"; };
+		B9636C11445840AA12D2C1DE /* Pods-vpntest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vpntest.debug.xcconfig"; path = "Target Support Files/Pods-vpntest/Pods-vpntest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF20AC4F6A108E98A72407C2 /* Pods_vpntest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,8 @@
 			children = (
 				881F7C652AB32AFD005CD198 /* vpntest */,
 				881F7C642AB32AFD005CD198 /* Products */,
+				C2216AE131C0F232EEB16948 /* Pods */,
+				A46E676EE61AC09463854E14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +64,7 @@
 		881F7C652AB32AFD005CD198 /* vpntest */ = {
 			isa = PBXGroup;
 			children = (
+				881F7C7A2AB32B8C005CD198 /* vpntest.entitlements */,
 				881F7C662AB32AFD005CD198 /* AppDelegate.swift */,
 				881F7C682AB32AFD005CD198 /* SceneDelegate.swift */,
 				881F7C6A2AB32AFD005CD198 /* ViewController.swift */,
@@ -67,6 +76,23 @@
 			path = vpntest;
 			sourceTree = "<group>";
 		};
+		A46E676EE61AC09463854E14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0983035F472AA62871AF1A37 /* Pods_vpntest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2216AE131C0F232EEB16948 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9636C11445840AA12D2C1DE /* Pods-vpntest.debug.xcconfig */,
+				55CEE82DE7C06EDBB29F81D5 /* Pods-vpntest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 881F7C772AB32AFF005CD198 /* Build configuration list for PBXNativeTarget "vpntest" */;
 			buildPhases = (
+				10ADF1724BA261BCF96E7B8E /* [CP] Check Pods Manifest.lock */,
 				881F7C5F2AB32AFD005CD198 /* Sources */,
 				881F7C602AB32AFD005CD198 /* Frameworks */,
 				881F7C612AB32AFD005CD198 /* Resources */,
+				6BDF6052240021F893F894C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +160,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10ADF1724BA261BCF96E7B8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vpntest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BDF6052240021F893F894C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vpntest/Pods-vpntest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vpntest/Pods-vpntest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vpntest/Pods-vpntest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		881F7C5F2AB32AFD005CD198 /* Sources */ = {
@@ -216,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,9 +352,11 @@
 		};
 		881F7C782AB32AFF005CD198 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9636C11445840AA12D2C1DE /* Pods-vpntest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = vpntest/vpntest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J2GLR26RLC;
@@ -295,6 +367,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,9 +383,11 @@
 		};
 		881F7C792AB32AFF005CD198 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55CEE82DE7C06EDBB29F81D5 /* Pods-vpntest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = vpntest/vpntest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J2GLR26RLC;
@@ -323,6 +398,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

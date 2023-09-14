@@ -1,0 +1,20 @@
+PODS:
+  - CoreVPN (1.0.6):
+    - PlainPing
+  - PlainPing (0.5.2)
+
+DEPENDENCIES:
+  - CoreVPN
+
+SPEC REPOS:
+  trunk:
+    - CoreVPN
+    - PlainPing
+
+SPEC CHECKSUMS:
+  CoreVPN: 28afc0636f257524299d5fb1da791dc6d5507ad8
+  PlainPing: 41fb93099deb2f5ddbc534a934eb3bf07522d437
+
+PODFILE CHECKSUM: 50a2270c570037f89f79b9a17b93c986d636810c
+
+COCOAPODS: 1.12.0
