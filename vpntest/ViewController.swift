@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func connectButtonPressed(_ sender: UIButton) {
-        let corevpnServers = CoreVPNServerModel(ip: "104.129.18.132", userName: "946oidjh-ubnrm9t", password: "mbqu3rj9hg", locationName: nil, locationImageLink: nil, ikev2ID: nil, l2tpPSK: nil, vpnProtocol: "12tp")
+        let corevpnServers = CoreVPNServerModel(ip: "104.129.18.132", userName: "946oidjh-ubnrm9t", password: "mbqu3rj9hg", locationName: nil, locationImageLink: nil, ikev2ID: "us-central.windscribe.com", l2tpPSK: nil, vpnProtocol: "ikev2")
         
         let corevpn = CoreVPN(serviceName: "CoreVPN Test", servers: [corevpnServers], delegate: self)
         corevpn.connect()
